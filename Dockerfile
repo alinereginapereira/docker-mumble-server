@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.9
 
 RUN apk add --no-cache murmur \
  && addgroup -S mumble-server && adduser -S mumble-server -G mumble-server
