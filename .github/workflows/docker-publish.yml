@@ -3,7 +3,7 @@ name: Docker
 on:
   # Auto update every week
   schedule:
-    - cron:  '30 2 1 * *'
+    - cron:  '30 2 * * 1'
 
   push:
     # Publish `master` as Docker `latest` image.
