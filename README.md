@@ -7,7 +7,7 @@ GitHub action is setup so this image is __updated every week__.
 _docker run_:
 
 ```sh
-docker run -p 64738:64738/tcp -p 64738:64738/udp docker.pkg.github.com/speedy37/docker-mumble-server/mumble-server:latest
+docker run -p 64738:64738/tcp -p 64738:64738/udp ghcr.io/speedy37/docker-mumble-server/mumble-server:latest
 ```
 
 _docker-compose.yml_:
@@ -16,7 +16,7 @@ _docker-compose.yml_:
 version: '2'
 services:
   mumble-server:
-    image: "docker.pkg.github.com/speedy37/docker-mumble-server/mumble-server:latest"
+    image: "ghcr.io/speedy37/docker-mumble-server/mumble-server:latest"
     restart: unless-stopped
     ports:
     - "64738:64738/tcp"
