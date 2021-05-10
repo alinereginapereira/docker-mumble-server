@@ -1,6 +1,8 @@
 # docker-mumble-server
 
-Alpine Linux mumble server docker image
+Alpine Linux mumble server docker image.
+
+GitHub action is setup so this image is __updated every week__.
 
 _docker run_:
 
